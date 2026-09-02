@@ -1,0 +1,17 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #e6edf5; background: #10151d; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.shell { max-width: 1180px; margin: 0 auto; padding: 42px 28px 64px; }
+.topbar { align-items: end; display: flex; justify-content: space-between; gap: 24px; border-bottom: 1px solid #293542; padding-bottom: 25px; }
+.eyebrow, .policy span, .classification, .project-status, .outcome-status { color: #8ea3b8; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+h1 { font-size: clamp(32px, 5vw, 54px); letter-spacing: -.05em; margin: 7px 0 0; }
+.policy { text-align: right; } .policy strong { color: #79b9ee; display: block; font-size: 26px; margin-top: 5px; }
+.notice { background: #151f2a; border: 1px solid #2b4358; border-radius: 8px; color: #b9c9d8; margin: 24px 0; padding: 13px 16px; }
+.status-dot { background: #6bb5ed; border-radius: 50%; display: inline-block; height: 8px; margin-right: 9px; width: 8px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card { background: #171f29; border: 1px solid #2a3542; border-radius: 10px; min-height: 210px; padding: 20px; }
+.card-heading, .outcome { align-items: center; display: flex; justify-content: space-between; gap: 12px; }
+.classification { color: #e6b76d; } h2 { font-size: 23px; margin: 24px 0 8px; } p { color: #9eafbf; line-height: 1.5; margin: 0; }
+.outcomes { border-top: 1px solid #293542; margin-top: 22px; padding-top: 12px; } .outcome { color: #dce6ef; font-size: 13px; padding: 8px 0; }
+.outcome-status { letter-spacing: .08em; } .outcome-status.active { color: #80d19a; } .outcome-status.planned { color: #79b9ee; }
+@media (max-width: 600px) { .shell { padding: 28px 18px; } .topbar { align-items: start; flex-direction: column; } .policy { text-align: left; } }
