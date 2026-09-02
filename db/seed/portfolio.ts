@@ -84,4 +84,13 @@ export const seedOutcomes: Outcome[] = [
     status: 'PLANNED',
     priority: 1,
   },
+  {
+    id: 'outcome-garage-maintenance',
+    projectId: 'project-garage-assist',
+    title: 'Keep scanner maintenance bounded',
+    successMeasure: 'One maintenance boundary is documented for the next review.',
+    deadline: '2026-09-26T23:59:59.000Z',
+    status: 'PLANNED',
+    priority: 2,
+  },
 ];
