@@ -1,0 +1,1355 @@
+{
+  "manifestVersion": "day10-canonical-manifest-proposed-v1",
+  "artifactStatus": "PROPOSED",
+  "generatedAt": "2026-09-03",
+  "reviewedAt": "2026-09-03",
+  "discoveryBoundary": {
+    "approvedRoots": [
+      {
+        "rootKey": "WINDOWS_PROJECTS",
+        "path": "C:\\Users\\bryan\\aibry\\projects",
+        "scanMode": "BOUNDED_METADATA_ONLY"
+      },
+      {
+        "rootKey": "AIBRY_EXCEPTION",
+        "path": "C:\\AIBRY",
+        "scanMode": "IMMEDIATE_CHILD_IDENTIFICATION_ONLY"
+      }
+    ],
+    "manualSourceRoots": [
+      {
+        "rootKey": "FEDORA_MANUAL",
+        "path": "/home/aibry/projects",
+        "scanMode": "REVIEWED_PROVENANCE_ONLY_NO_SCAN"
+      }
+    ],
+    "exclusions": [
+      "node_modules",
+      "dist",
+      "build",
+      "coverage",
+      "output",
+      "cache",
+      "tmp",
+      "temp",
+      ".git object contents",
+      ".env*",
+      "credentials, tokens, keys, passwords, provider secrets, and registry credentials",
+      "database dumps and backups",
+      "dependency contents and vendored dependencies",
+      "media and binary contents",
+      "Garage Admin memory and session archives",
+      "personal and shared data",
+      "Family Tree genealogy and person data",
+      "Hopewell customer, order, and payment data",
+      "AIBRY ID user, account, session, and invite data",
+      "camera captures and sensitive camera configuration",
+      "Music Vault media and content",
+      "C:\\AIBRY\\music-vault",
+      "C:\\AIBRY\\Shared_Folder"
+    ],
+    "executionPolicy": "NEVER_EXECUTE_DISCOVERED_CODE_OR_PACKAGE_SCRIPTS"
+  },
+  "summary": {
+    "canonicalProjectCount": 17,
+    "sourceRecordCount": 35,
+    "unknownCandidateCount": 4,
+    "reviewRequiredCandidateCount": 3,
+    "outcomeCount": 0
+  },
+  "canonicalProjects": [
+    {
+      "projectKey": "asos-kernel",
+      "name": "ASOS Kernel",
+      "engine": "AIBRY_LABS",
+      "classification": "FLAGSHIP",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Flagship coordination and operating-system proof for AIBRY Labs.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "asos-kernel-specialist-platform",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-specialist-platform",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "aibry-specialist-platform",
+            "scripts": ["install:ci", "dev", "build", "start", "test", "lint", "db:generate"],
+            "gitPresent": true,
+            "branch": "main",
+            "remoteUrl": "https://github.com/bryan060807/aibry-specialist-platform.git",
+            "latestLocalCommitDate": "2026-07-20T13:14:03-05:00",
+            "frameworkRuntime": "Next.js/React/TypeScript",
+            "readmeDescription": "ASOS is a governed AI operations kernel demonstrated through one deterministic TrackMaster-inspired login incident.",
+            "deploymentConfigPresent": false,
+            "testsPresent": true
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "aibry-command",
+      "name": "AIBRY Command",
+      "engine": "AIBRY_LABS",
+      "classification": "SUPPORTING",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Private operating control plane for creative and technical work.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "Matches existing seeded Project id project-aibry-command; import must be idempotent and must not duplicate it."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-command-primary-repo",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-command",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "catalog-os",
+      "name": "Catalog OS",
+      "engine": "AIBRY_LABS",
+      "classification": "SUPPORTING",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Applied ASOS system and proving environment.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "Keep separate from ASOS Kernel; aibry-music-vault-api is a legacy component, not a standalone canonical project."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "catalog-os-primary-repo",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-catalog-os",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "catalog-os-legacy-music-vault-api",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "LEGACY",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-music-vault-api",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [
+            "Legacy Catalog OS/Music Vault component; do not import as a standalone canonical project or operate during Day 10."
+          ],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "aibry-website",
+      "name": "AIBRY Website",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-website-windows-source",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry_website",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "aibry-website-fedora-api",
+          "sourceType": "MANUAL_PROVENANCE",
+          "sourceRole": "API_REPO",
+          "host": "FEDORA",
+          "safePathOrIdentifier": "/home/aibry/projects/aibry-website-api",
+          "sourceRoot": "FEDORA_MANUAL",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "trackmaster",
+      "name": "TrackMaster",
+      "engine": "AIBRY_LABS",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "TrackMaster-Comparator is a companion/legacy/tooling source, not a separate canonical project."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "trackmaster-primary-repo",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-trackmaster",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "trackmaster-comparator",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "LEGACY",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\TrackMaster-Comparator",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [
+            "Companion/legacy/tooling source for TrackMaster; no automatic merge beyond this reviewed grouping."
+          ],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "chordmaster",
+      "name": "ChordMaster",
+      "engine": "AIBRY_LABS",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "aibry-chordmaster-api and aibry-chordmaster-ui are API/UI sources for one canonical project."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "chordmaster-api",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "API_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-chordmaster-api",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "chordmaster-ui",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "UI_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-chordmaster-ui",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "garage-assist",
+      "name": "Garage Assist",
+      "engine": "AIBRY_LABS",
+      "classification": "REVENUE",
+      "status": "MAINTENANCE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "workstreamNote": "Hardware-validation workstream is paused; this does not assert runtime health or shutdown.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "GarageAssistBridge is a bridge/component of Garage Assist, not a separate canonical project."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "garage-assist-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\GarageAssist",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "garage-assist-bridge",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "BRIDGE",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\GarageAssistBridge",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "garage-admin-otis",
+      "name": "Garage Admin / OTIS",
+      "engine": "AIBRY_LABS",
+      "classification": "SUPPORTING",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Operational inventory and orchestration authority for runtime systems.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "garage-admin-otis is current canonical implementation; garage-admin-v2 is predecessor/legacy."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "garage-admin-otis-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\garage-admin-otis",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "garage-admin-v2-legacy",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "LEGACY",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\garage-admin-v2",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [
+            "Predecessor/legacy implementation; do not describe as current canonical implementation."
+          ],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "garage-admin-worker-agent",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "RUNTIME",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-worker-agent",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [
+            "Garage Admin evidence/runtime component; exclude as standalone canonical project."
+          ],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "garage-admin-3d-garage-reference",
+          "sourceType": "REFERENCE",
+          "sourceRole": "REFERENCE",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\AIBRY\\3d-garage",
+          "sourceRoot": "AIBRY_EXCEPTION",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [
+            "Design/prototype/reference source; not a standalone canonical product and not a broad C:\\AIBRY scan target."
+          ],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "taskmaster",
+      "name": "TaskMaster",
+      "engine": "AIBRY_LABS",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "TaskMaster and taskmaster-api are proposed as one canonical project with UI/product and API sources."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "taskmaster-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\TaskMaster",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "taskmaster-api",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "API_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\taskmaster-api",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "aibry-vision",
+      "name": "AIBRY Vision",
+      "engine": "AIBRY_LABS",
+      "classification": "SUPPORTING",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "vision-privacy is a support/privacy component unless later evidence proves it is a distinct maintained product."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-vision-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-vision",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "vision-privacy-support",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "SUPPORT",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\vision-privacy",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "app-autopsy",
+      "name": "App Autopsy",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "app-autopsy-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\app-autopsy",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "aibry-id",
+      "name": "AIBRY ID",
+      "engine": "AIBRY_LABS",
+      "classification": "SUPPORTING",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Internal identity platform; authentication implementation remains outside this slice.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-id-fedora-primary",
+          "sourceType": "MANUAL_PROVENANCE",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "FEDORA",
+          "safePathOrIdentifier": "/home/aibry/projects/AIBRY-Auth",
+          "sourceRoot": "FEDORA_MANUAL",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "hopewell-winery-platform",
+      "name": "Hopewell Winery Platform",
+      "engine": "UNKNOWN",
+      "classification": "REVENUE",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "HoldTheSalt is the reviewed repository/source for this canonical project. Do not import customer, order, or payment data."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "hopewell-winery-platform-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\HoldTheSalt",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "lyricsync",
+      "name": "LyricSync",
+      "engine": "UNKNOWN",
+      "classification": "SUPPORTING",
+      "status": "MAINTENANCE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "Fedora UI/API runtime provenance is manually reviewed; no Fedora scan is authorized."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "lyricsync-windows-source",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\LyricSync",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        },
+        {
+          "sourceKey": "lyricsync-fedora-runtime",
+          "sourceType": "MANUAL_PROVENANCE",
+          "sourceRole": "RUNTIME",
+          "host": "FEDORA",
+          "safePathOrIdentifier": "LyricSync Fedora-managed UI/API runtime and source provenance",
+          "sourceRoot": "FEDORA_MANUAL",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "masteraudiobook",
+      "name": "MasterAudioBook",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "masteraudiobook-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\MasterAudioBook",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "silverado-oil-leak-atlas",
+      "name": "Silverado Oil Leak Atlas",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "silverado-oil-leak-atlas-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\silverado-oil-leak-atlas",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "projectKey": "family-tree",
+      "name": "Family Tree",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "ACTIVE",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [
+        "Repository metadata may be inventoried later, but genealogy/person data is explicitly excluded."
+      ],
+      "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "family-tree-primary",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\family-tree",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "candidateKey": "event-horizon",
+      "name": "event_horizon",
+      "candidateDisposition": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "event-horizon-candidate",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\event_horizon",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "lode-ai",
+      "name": "lode-ai",
+      "candidateDisposition": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "lode-ai-candidate",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\lode-ai",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "aibry-pc-organizer",
+      "name": "PC Organizer",
+      "candidateDisposition": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-pc-organizer-candidate",
+          "sourceType": "MANUAL_PROVENANCE",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\AIBRY\\aibry-pc-organizer",
+          "sourceRoot": "AIBRY_EXCEPTION",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "cam-wall",
+      "name": "Camera Wall",
+      "candidateDisposition": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "cam-wall-candidate",
+          "sourceType": "MANUAL_PROVENANCE",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\AIBRY\\cam-wall",
+          "sourceRoot": "AIBRY_EXCEPTION",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "showcase",
+      "name": "OpenAI Showcase — Garage Admin",
+      "candidateDisposition": "REVIEW_REQUIRED",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "Initiative/showcase; canonical portfolio treatment requires Bryan decision.",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "showcase-candidate",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "REFERENCE",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\showcase",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "tradebrain",
+      "name": "TradeBrain",
+      "candidateDisposition": "REVIEW_REQUIRED",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "tradebrain-candidate",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "PRIMARY_REPO",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\TradeBrain",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    },
+    {
+      "candidateKey": "aibry-masterclass-landing",
+      "name": "AIBRY Masterclass",
+      "candidateDisposition": "REVIEW_REQUIRED",
+      "engine": "UNKNOWN",
+      "classification": "UNKNOWN",
+      "status": "UNKNOWN",
+      "runtimeState": "UNKNOWN",
+      "purpose": "UNKNOWN",
+      "links": [],
+      "monthlyCost": null,
+      "duplicateSignals": [],
+    "reviewState": "PENDING",
+      "outcomes": [],
+      "sources": [
+        {
+          "sourceKey": "aibry-masterclass-landing-candidate",
+          "sourceType": "REPOSITORY",
+          "sourceRole": "REFERENCE",
+          "host": "WINDOWS",
+          "safePathOrIdentifier": "C:\\Users\\bryan\\aibry\\projects\\aibry-masterclass-landing",
+          "sourceRoot": "WINDOWS_PROJECTS",
+          "metadata": {
+            "packageName": "UNKNOWN",
+            "scripts": "UNKNOWN",
+            "gitPresent": "UNKNOWN",
+            "branch": "UNKNOWN",
+            "remoteUrl": "UNKNOWN",
+            "latestLocalCommitDate": "UNKNOWN",
+            "frameworkRuntime": "UNKNOWN",
+            "readmeDescription": "UNKNOWN",
+            "deploymentConfigPresent": "UNKNOWN",
+            "testsPresent": "UNKNOWN"
+          },
+          "duplicateSignals": [],
+          "observedAt": "2026-09-03",
+          "manifestProvenance": "reviewed-handoff-2026-09-03",
+          "reviewState": "PENDING"
+        }
+      ]
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "name": "libs",
+      "path": "C:\\Users\\bryan\\aibry\\projects\\libs",
+      "reason": "Shared/component code directory; not a canonical portfolio project."
+    },
+    {
+      "name": "music-vault",
+      "path": "C:\\AIBRY\\music-vault",
+      "reason": "Governed media/data boundary; do not scan or import content."
+    },
+    {
+      "name": "Shared_Folder",
+      "path": "C:\\AIBRY\\Shared_Folder",
+      "reason": "Shared/personal data boundary; do not scan."
+    }
+  ],
+  "importGuards": [
+    "Bryan must explicitly approve this exact artifact and externally reported SHA-256 before import.",
+    "Re-hash exact file bytes immediately before import and refuse on mismatch.",
+    "Import only approved canonical projects and source records transactionally.",
+    "Preserve source and manifest provenance; never auto-merge duplicate signals.",
+    "Match existing seeded AIBRY Command rather than creating a duplicate.",
+    "Create zero Outcomes during import.",
+    "No project is activated automatically."
+  ],
+  "outcomes": []
+}
